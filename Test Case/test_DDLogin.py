@@ -15,6 +15,7 @@ class Test_002_DDT_Login:
     path=r"D:\python Q\e-commerce\Test Data\data_proj.xlsx"
     logger=Log.loggen()
 
+    @pytest.mark.regression
     def test_Login(self,setup):
         self.logger.info("****************Verying Data Driven Testing**************")
         self.driver = setup

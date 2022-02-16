@@ -14,7 +14,7 @@ class Test_001_Login:
     password=reading.getpassword()
     logger = Log.loggen()
 
-
+    @pytest.mark.regression
     def test_homePageTitle(self,setup):
         self.logger.info("****************Test_001_Login**************")
         self.logger.info("****************Verying Homepage Title**************")
@@ -31,6 +31,7 @@ class Test_001_Login:
             self.logger.error("****************Homepage title failed**************")
             assert False
 
+    @pytest.mark.regression
     def test_Login(self,setup):
         self.logger.info("****************Verying Login Test**************")
         self.driver = setup
