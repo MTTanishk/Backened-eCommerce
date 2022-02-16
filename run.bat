@@ -1,1 +1,1 @@
-pytest -v -s -m "regression"
+pytest -v -s -m "regression" --html="D:\python Q\e-commerce\reports\jenreport.html" --browser chrome
