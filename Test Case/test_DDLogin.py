@@ -8,6 +8,7 @@ from Utilities.readproperties import reading
 from Utilities.customLogger import Log
 from Utilities import ExcelUtils
 import time
+import pytest
 
 
 class Test_002_DDT_Login:
